@@ -22,14 +22,17 @@ public class PrimeCheckTest {
   // --------------------------------------------------------------- //
   @Test
   public void testPrimes() {
-    /* ToDo: insert a test here */
-    assertEquals("this will fail", true, false);
+    assertEquals("Test (prime) number 3", true, PrimeCheck.isPrime(3));
+    assertEquals("Test (prime) number 5", true, PrimeCheck.isPrime(5));
+    assertEquals("Test (prime) number 7", true, PrimeCheck.isPrime(7));
   }
 
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
-    /* ToDo: insert a test here */
-    assertEquals("this will fail", true, false);
+    assertEquals("Test (non-prime) number 4", false, PrimeCheck.isPrime(4));
+    assertEquals("Test (non-prime) number 6", false, PrimeCheck.isPrime(6));
+    assertEquals("Test (non-prime) number 8", false, PrimeCheck.isPrime(8));
+
   }
 }
